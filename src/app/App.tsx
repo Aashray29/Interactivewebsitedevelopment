@@ -128,9 +128,7 @@ export default function App() {
               <Database className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
               <div>
                 <p className="font-medium text-slate-300">Database Status</p>
-                <p className="text-slate-500 mt-1 leading-relaxed">
-                  FastAPI is currently disconnected from Supabase. Simulations are running in-memory. Connect DB to persist results.
-                </p>
+               
               </div>
             </div>
           </div>
