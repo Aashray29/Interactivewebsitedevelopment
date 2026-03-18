@@ -123,16 +123,7 @@ export default function App() {
           <div className="space-y-6">
             <PolicyControls policies={policies} setPolicies={setPolicies} />
             
-            {/* Supabase Mock Status */}
-            <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/30 backdrop-blur-sm flex items-start gap-3 text-sm">
-              <Database className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
-              <div>
-                <p className="font-medium text-slate-300">Database Status</p>
-               
-              </div>
-            </div>
-          </div>
-        </div>
+            
         
         {/* Charts Full Width */}
         <AnimatePresence mode="wait">
