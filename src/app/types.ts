@@ -12,6 +12,33 @@ export interface City {
   state?: string;
 }
 
+export interface CountryData {
+  name: string;
+  isoCode: string;
+  flag: string;
+  phonecode: string;
+  currency: string;
+  latitude: string;
+  longitude: string;
+  timezones: string[];
+}
+
+export interface StateData {
+  name: string;
+  isoCode: string;
+  countryCode: string;
+  latitude: string;
+  longitude: string;
+}
+
+export interface CityData {
+  name: string;
+  countryCode: string;
+  stateCode: string;
+  latitude: string;
+  longitude: string;
+}
+
 export interface Policies {
   ev: number;
   trees: number;

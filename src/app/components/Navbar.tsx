@@ -1,5 +1,5 @@
-import React from 'react';
-import { Globe2, Sparkles } from 'lucide-react';
+// No React import needed with new JSX transform
+import { Globe2, Sparkles } from "lucide-react";
 
 interface NavbarProps {
   futureMode: boolean;
@@ -22,20 +22,24 @@ export function Navbar({ futureMode, setFutureMode }: NavbarProps) {
           </p>
         </div>
       </div>
-      
+
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-3 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
-          <Sparkles className={`w-4 h-4 ${futureMode ? 'text-cyan-400' : 'text-slate-500'}`} />
-          <span className="text-sm font-medium text-slate-300">Future Mode (2035)</span>
+          <Sparkles
+            className={`w-4 h-4 ${futureMode ? "text-cyan-400" : "text-slate-500"}`}
+          />
+          <span className="text-sm font-medium text-slate-300">
+            Future Mode (2035)
+          </span>
           <button
             onClick={() => setFutureMode(!futureMode)}
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900 ${
-              futureMode ? 'bg-cyan-500' : 'bg-slate-600'
+              futureMode ? "bg-cyan-500" : "bg-slate-600"
             }`}
           >
             <span
               className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-300 ${
-                futureMode ? 'translate-x-6' : 'translate-x-1'
+                futureMode ? "translate-x-6" : "translate-x-1"
               }`}
             />
           </button>
