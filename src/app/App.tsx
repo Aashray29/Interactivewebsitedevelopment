@@ -66,7 +66,7 @@ export default function App() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row gap-6 items-end justify-between">
+        <div className="flex flex-col md:flex-row gap-6 md:items-end md:justify-between">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-white mb-2">
               Command Center
@@ -76,7 +76,7 @@ export default function App() {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 bg-slate-900/50 p-1.5 rounded-xl border border-slate-800">
+          <div className="flex items-center gap-3 bg-slate-900/50 p-1.5 rounded-xl border border-slate-800 w-full md:w-auto">
             <button
               onClick={runSimulation}
               disabled={loading || !selectedCity}
